@@ -1,0 +1,13 @@
+#todos {
+    border: 3px solid rgba(57,129,169,1);
+    border-radius: 10px;
+    width: 100%;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #todos > h1 {
+    margin: 10px 0px 0px 0px;
+    padding: 10px 20px 5px 30px;
+    border-bottom: 1px solid black;
+  }
