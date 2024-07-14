@@ -51,3 +51,29 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Additions for drag and drop */
+.task-list {
+  padding: 0;
+}
+
+.task-list li {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: grab; /* Change cursor to grab for draggable items */
+}
+
+.task-list li.dragging {
+  opacity: 0.5;
+}
+
+.task-list li.placeholder {
+  background-color: #e0e0e0; /* Placeholder background color */
+}
+
+/* Hover effect for buttons */
+.deleteBtn:hover {
+  background-color: #d32f2f; /* Darken color on hover */
+}
