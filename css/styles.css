@@ -1,14 +1,29 @@
-#todos {
-  border: 3px solid rgba(57,129,169,1);
-  border-radius: 10px;
-  width: 100%;
+body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#todos {
+  border: 3px solid rgba(57, 129, 169, 1);
+  border-radius: 10px;
+  width: 100%;
+}
+
 #todos > h1 {
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0 0 0;
   padding: 10px 20px 5px 30px;
   border-bottom: 1px solid black;
+}
+
+#todoList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#todoList li {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .addTodo {
@@ -24,6 +39,15 @@
 }
 
 .addTodo > button {
-  flex: 0 0 25%;
+  flex: 0 0 auto; /* Ensure the button takes only the necessary space */
   margin-top: 5px;
+}
+
+.deleteBtn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
